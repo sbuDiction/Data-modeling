@@ -1,0 +1,8 @@
+=select all the teachers with their subjects and school the teach from.
+statement: [SELECT teachers.first_name, teachers.last_name, teachers.id_number, teachers.email, subjects.subject_name, schools.school_name FROM subjects inner join teachers on subjects.id = teachers.subjects_id inner join schools on schools.id = teachers.schools_id;]
+
+=select all the teachers and the sujects they teach.
+statement: [SELECT teachers.first_name, teachers.last_name, teachers.id_number, teachers.email, subjects.subject_name FROM subjects inner join teachers on subjects.id = teachers.subjects_id;]
+
+=select all students and the subjects they studying and school.
+statement: [SELECT learners.first_name, learners.last_name, learners.id_number, learners.email, subjects.subject_name, schools.school_name FROM subjects inner join learners on subjects.id = learners.subjects_id inner join schools on schools.id = learners.schools_id;]
